@@ -1,0 +1,524 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  padding-left: 15%;
+  padding-right: 20%;
+  background-color: white;
+  user-select: none;
+}
+#form-body{
+  width: 100%;
+  max-width: 880px;
+  height: 100%;
+  max-height: 1010px;
+  border: 2px solid rgba(128, 128, 128, 0.329);
+  padding: 40px 55px 90px 55px;
+  border-radius: 30px;
+  margin: auto;
+  background-color: rgba(128, 128, 128, 0.11);
+}
+.flex-container {
+  margin-top: 10px;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+  text-align: center;
+  margin-top: 15px;
+}
+.flex-container h1{
+  font-size: 31px;
+}
+.flex-container img {
+  width: 32px;
+  margin-right: 5px;
+}
+.location {
+  text-align: center;
+  font-size: 12px;
+  margin-top: -20px;
+  margin-bottom: 40px;
+}
+.location h1{
+  font-size: 24px;
+}
+.enquiry-div {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+.enquiry-div div{
+  padding-right: 3%;
+}
+/* .table-div th {
+  padding: 8px;
+  font-weight: 300;
+  line-height: 19px;
+  text-align: left;
+}
+.table-div table{
+  width: 860px;
+}
+.table-div th > strong {
+  display: block;
+}
+.table-div td {
+  height: 20px;
+  padding: 10px;
+} */
+/* .part-1,
+.part-2 {
+  display: flex;
+  justify-content: space-between;
+} */
+label {
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 25px;
+}
+.label-not {
+  font-weight: lighter;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+div {
+  margin-bottom: 25px;
+}
+div input[type="text"],
+input[type="email"] {
+  font-size: 17px;
+  width: 750px;
+  height: 25px;
+  background-color: transparent;
+  outline: none;
+  border: none;
+  border-bottom: 1.5px solid gray;
+  padding-left: 3px;
+}
+input[type="number"],
+input[type="date"] {
+  font-size: 16.6px;
+  height: 25px;
+  width: 320px;
+  background-color: transparent;
+  outline: none;
+  border: none;
+  border-bottom: 1.5px solid gray;
+  padding-left: 3px;
+}
+input[type="radio"] {
+  margin-left: 6px;
+  outline: none;
+}
+input[type="radio"]::before{
+  content: "";
+  width: 32px;
+  padding: 0.9px 8.1px 1px 8.5px;
+  border: 2px solid black;
+  border-radius: 50%;
+  position: relative;              /* Give position relative to it!*/
+  bottom: 1.4px;
+  right: 3.6px;
+}
+#person,#exp{
+  width: 96.5%;
+  margin: 7px 8px 10px 4px;
+}
+#map{
+  width: 87.8%;
+  margin: 0px 8px 10px 4px;
+}
+#mail{
+  width: 90.2%;
+  margin: 0px 8px 10px 4px;
+}
+#num{
+  width: 37%;
+  margin: 0px 8px 10px 4px;
+}
+#alt-num{
+  width: 36.6%;
+  margin: 0px 8px 10px 4px;
+}
+#name{
+  width: 89.9%;
+  margin: 0px 8px 10px 4px;
+}
+/* .hear-about-div{
+  margin-top: 18px;
+  margin-bottom: 25px;
+} */
+
+#select-course{
+  width: 82%;
+  height: 35px;
+  margin-bottom: 8px;
+  margin-top: 4px;
+  outline: none;
+  border: none;
+  font-size: 16.8px;
+  font-weight: bold;
+  padding-left: 10px;
+  border-bottom: 1.5px solid grey;
+  background-color: transparent;
+  color: rgb(88, 138, 248);
+}
+.sub{
+  text-align: center;
+}
+.sub button{
+  width: 145px;
+  height: 40px;
+  font-size: 17.6px;
+  border-radius: 10px;
+  border: none;
+  background-color: rgb(93, 142, 247);
+  color: white;
+  margin: 12px;
+  cursor: pointer;
+  outline: none;
+  transition: background-color 0.17s ease, transform 0.19s ease;
+}
+.sub button:hover{
+  background-color: rgb(57, 116, 244);
+  transform: translateY(-2.5px);
+}
+.sub button:active{
+  background-color: rgb(27, 96, 244);
+  transform: translateY(2px);
+}
+@media(max-width: 1310px){
+  #form-body{
+    padding: 15px;
+    max-height: 2300px;
+  }
+  .flex-container{
+    padding: 15px;
+    line-height: 10px;
+  }
+  .flex-container h1{
+    font-size: 22px;
+  }
+  input[type="text"]{
+    font-size: 14px;
+  }
+  #name, #map, #mail,
+  #num , #alt-num {
+    width: 95%;
+  }
+  #select-course{
+    width: 96%;
+    font-size: 14px;
+  }
+  label{
+    font-size: 14px;
+    line-height: 8px;
+  }
+  .num-div{
+    display: flex;
+    flex-direction: column;
+  }
+  .num-div label{
+    line-height: 25px;
+  }
+  .num-div input{
+    border: none;
+    border-bottom: 1.5px solid gray;
+  }
+  .sub button{
+    width: 130px;
+    height: 32px;
+    font-size: 16px;
+    margin: 12px;
+  }
+  .enquiry-div {
+    display: flex;
+    align-items: center;
+  }
+  .enquiry-div div {
+    margin-top: 21px;
+  }
+}
+@media (max-width:1100px){
+  #form-body{
+    max-height: 2500px;
+  }
+}
+/* .tablleEntry table, th, td{
+  border: 2px solid gray;
+  width: 900px;
+  height: 20px;
+  padding: 10px;
+  text-align: center;
+}
+.tableEntry th {
+  padding: 8px;
+  font-weight: 300;
+  line-height: 19px;
+  font-weight: bold;
+  font-size: 19px;
+}
+.tableEntry table{
+  width: 100%;
+  width: 1100px;
+  margin-left: -60px;
+  background-color: rgba(128, 128, 128, 0.11);
+  margin: auto;
+  margin-left: 3%;
+}
+.tableEntry td {
+  height: 20px;
+  padding: 10px;
+}
+.table-container{
+  padding-left: 30px;
+  padding-right: 30px;
+} */
+/* General Styling for Table */
+/* .table-container {
+  width: 100%;
+  padding: 30px 80px 30px 55px;
+  margin: 20px auto 80px;
+  margin-left: -14%;
+} */
+
+/* I trying the other way == . AZAX through link the doc!*/
+/*
+.table-container {
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+ 
+}
+.table-container table, tr, th{
+  width: 100%;
+  border-collapse: collapse;
+  width: 1100px;
+  height: 38px;
+  font-size: 20px;
+  user-select: none;
+}
+.table-container table tbody td{
+  padding-left: 10px;
+  width: 200px;
+  user-select: text;
+}
+#table th,
+#table td {
+  width: 100%;
+  padding: 9px;
+  border: 1px solid #ddd;
+}
+
+#table th {
+  background-color: #f4f4f4;
+  font-size: 19px;
+  padding: 15px;
+  font-weight: bold;
+}
+#table th:nth-child(1),#table th:nth-child(2), #table th:nth-child(3), #table th:nth-child(4), #table th:nth-child(5), #table th:nth-child(6),#table th:nth-child(7),#table th:nth-child(8){
+  padding: 10px 36px 10px 33px;
+}
+
+#table td:nth-child(1), #table td:nth-child(2), #table td:nth-child(3), #table td:nth-child(4), #table td:nth-child(5),#table td:nth-child(6), #table td:nth-child(7), #table td:nth-child(8) {
+  padding: 5px 30px 5px 8px;
+}
+
+#table td {
+  background-color: #fff;
+  font-size: 17.6px;
+  text-align: left;
+}
+#table button{
+  width: 95px;
+  height: 30px;
+  font-size: 17.6px;
+  border-radius: 10px;
+  border: none;
+  background-color: rgb(93, 142, 247);
+  color: white;
+  margin: 12px;
+  cursor: pointer;
+  outline: none;
+  transition: background-color 0.17s ease, transform 0.19s ease;
+}
+
+
+@media screen and (max-width: 768px) {
+ 
+  .table-container {
+    overflow-x: auto;
+  }
+
+  #table {
+    display: block;
+    width: 100%;
+    overflow-x: auto;
+    white-space: nowrap;
+  }
+
+  #table th, #table td {
+    padding: 8px;
+    font-size: 14px;
+  }
+  #table tr {
+    display: block;
+    border-bottom: 1px solid #ddd;
+    margin-bottom: 10px;
+  }
+
+  #table td {
+    display: inline-block;
+    text-align: right;
+    position: relative;
+    padding-left: 2%;
+    margin-top: -10px;
+  }
+
+}
+
+@media screen and (max-width: 480px) {
+ 
+  #table td {
+    font-size: 12px;
+    padding: 6px;
+  }
+}
+*/
+
+/* For new table--*/
+
+ .table-container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 7%;
+  margin-left: 7%;
+ }
+ .table-container table,tr,th {
+  width: 1200px;
+  height: 43px;
+  margin-top: 15px;
+  font-size: 20px;
+  border-collapse: collapse;
+  user-select: none;
+ }
+ .table-container table th{
+  background-color: rgba(128, 128, 128, 0.11);
+ }
+ .table-container table tbody td{
+  padding-left: 8px;
+  user-select: text;
+  height: 47px;
+ }
+ .table-container table tbody td:nth-child(8), table tbody td:nth-child(9){
+  padding-left: 1px;
+ }
+#edtBtn{
+  width: 98px;
+  height: 43px;
+  font-size: 16px;
+  border-radius: 5px;
+  margin: 2px;
+  border: none;
+  background-color: rgb(93, 142, 247);
+  color: white;
+  cursor: pointer;
+  outline: none;
+  padding-left: 0px;
+  transition: background-color 0.17s ease;
+}
+button#edtBtn{
+  background-color: rgb(93, 142, 247);
+  color: white;
+}
+#delBtn{
+  width: 98px;
+  height: 43px;
+  font-size: 16px;
+  border-radius: 5px;
+  margin: 2px;
+  border: none;
+  background-color: rgba(254, 40, 40, 0.749);
+  color: white;
+  cursor: pointer;
+  outline: none;
+  padding-left: 0px;
+  transition: background-color 0.17s ease;
+}
+#edtBtn:hover{
+  background-color: rgb(57, 116, 244);
+}
+#delBtn:hover{
+  background-color: rgba(253, 21, 21, 0.929);
+}
+#edtBtn:active{
+  background-color: rgb(27, 96, 244);
+}
+#delBtn:active{
+  background-color: rgb(255, 0, 0);
+}
+
+/* CSS for Dynamic input fields!!!*/ 
+
+#nameInp{
+  width: 140px;
+  height: 46px;
+  outline: none;
+  margin-left: -8px;
+  border-bottom: 2.5px solid gray;
+}
+#numInp{
+  width: 150px;
+  height: 46px;
+  outline: none;
+  margin-left: -8px;
+  border-bottom: 2.5px solid gray;
+}
+#mailInp{
+  width: 190px;
+  height: 46px;
+  outline: none;
+  border: none;
+  border-bottom: 2.5px solid gray;
+  font-size: 16px;
+  margin-left: -8px;
+  padding-left: 3px;
+}
+#locInp{
+  width: 130px;
+  height: 46px;
+  outline: none;
+  margin-left: -8px;
+  border-bottom: 2.5px solid gray;
+}
+#course-sel{
+  width: 145px;
+  height: 48px;
+  outline: none;
+  font-size: 15.5px;
+  margin-left: -8px;
+  border: none;
+  border-bottom: 2.5px solid gray;
+}
+#timeInp{
+  width: 130px;
+  height: 48px;
+  outline: none;
+  font-size: 15.5px;
+  margin-left: -8px;
+  border: none;
+  border-bottom: 2.5px solid gray;
+}
+#prof-sel{
+  width: 140px;
+  height: 48px;
+  outline: none;
+  font-size: 15.5px;
+  margin-left: -8px;
+  border: none;
+  border-bottom: 2.5px solid gray;
+}
+

@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Enquiry Form</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="shortcut icon" href="/IMG/Besant_logo.jpeg" type="image/x-icon">
+   
+  </head>
+  <body>
+  <div id="form-body">
+    <div class="flex-container">
+      <div>
+        <img
+          src="/IMG/Besant_logo.jpeg"
+        />
+      </div>
+      <div><h1>Besant Technologies</h1></div>
+    </div>
+    <div class="location">
+      <h1>Anna Nagar</h1>
+    </div>
+
+    <form id="form" action="">
+      <div class="enquiry-div">
+        <label>Enquiry Form</label>
+        <div>
+          <label for="date">Date:</label>
+          <input type="date" name="date" id="date"/>
+        </div>
+      </div>
+
+      <div class="name-div">
+        <label for="name">Name:</label>
+        <input type="text" name="name" id="name" />
+      </div>
+
+      <div class="num-div">
+        <label for="num">Mobile No:</label>
+        <input type="number" name="num" id="num" />
+
+        <label for="num">Alternate No:</label>
+        <input type="number" name="num" id="alt-num" />
+      </div>
+
+      <div class="email-div">
+        <label for="mail">Email:</label>
+        <input type="email" name="mail" id="mail" />
+      </div>
+
+      <div class="map-location">
+        <label for="map">Location:</label>
+        <input type="text" name="map" id="map" />
+      </div>
+
+      <div class="course-div">
+        <label for="course">Course Interested:</label>
+        <!-- <input type="text" name="course" id="course" /> -->
+         <select name="Courses" id="select-course">
+          <option value="Front-End">Front-End</option>
+          <option value="Back-End">Back-End</option>
+          <option value="Full Stack Java">Full Stack Java</option>
+          <option value="Full Stack Python">Full Stack Python</option>
+          <option value="Data Analytics">Data Analytics</option>
+          <option value="Dot Net">Dot Net</option>
+          <option value="Cloud Computing">Cloud Computing</option>
+          <option value="Software Testing">Software Testing</option>
+         </select>
+      </div>
+
+      <div class="batch-time-div">
+        <label>Batch Preferred:</label>
+
+        <input type="radio" value="Weekdays" name="batch-time" id="weekdays" />
+        <label for="batch-time" class="label-not">Weekdays</label>
+
+        <input type="radio" value="weekends" name="batch-time" id="weekends" />
+        <label for="batch-time" class="label-not">Weekends</label>
+      </div>
+
+      <div class="profession-div">
+        <label>Profession:</label>
+
+        <input type="radio" value="Student" name="profession" id="student" />
+        <label for="stud" class="label-not">Student</label>
+
+        <input type="radio" value="Fresher" name="profession" id="fresher" />
+        <label for="stud" class="label-not">Fresher</label>
+
+        <input type="radio" value="Exp in IT" name="profession" id="exp-it" />
+        <label for="stud" class="label-not">Exp in IT</label>
+
+        <input type="radio" value="Exp in Non IT" name="profession" id="non-exp-it" />
+        <label for="stud" class="label-not">Exp in Non IT</label>
+
+        <input type="radio" value="Career-Break" name="profession" id="career-break" />
+        <label for="stud" class="label-not">Career Break</label>
+      </div>
+
+    
+      <!-- <div class="table-div">
+        <table border="1">
+          <tr>
+            <th><strong>Student</strong>School/Diplomo/College</th>
+            <th><strong>Fresher</strong> UG / PG-Passed out</th>
+            <th>Years of<strong>Exp in IT (Domain)</strong></th>
+            <th>Years of<strong>Exp in Non-IT</strong></th>
+            <th>How many Years<strong>Career Break</strong></th>
+          </tr>
+          <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+        </table>
+      </div> -->
+
+      <div class="exp-div">
+        <label for="exp">Exp in IT or Non IT Company Name:</label>
+        <input type="text" name="exp" id="exp" />
+      </div>
+
+      <div class="trainer-div">
+        <label>Are you interested As Become a Trainer?</label>
+
+        <input type="radio" name="trainer" value="Yes" id="train-yes" />
+        <label for="train-yes" class="label-not">Yes</label>
+
+        <input type="radio" name="trainer" value="No" id="train-no" />
+        <label for="train-no" class="label-not">No</label>
+      </div>
+
+      <div class="hear-about-div">
+        <label>How Did You Hear About Us:</label>
+
+        <input type="radio" value="Google Search" name="media" id="via-google" />
+        <label for="via-google" class="label-not">Google Search</label>
+
+        <input type="radio" value="Social Media" name="media" id="via-media" />
+        <label for="via-media" class="label-not">Social Media</label>
+
+        <input type="radio" value="Reference" name="media" id="via-refer" />
+        <label for="via-refer" class="label-not">Reference</label>
+      </div>
+
+      <div class="contact-person-div">
+        <label for="person">Contact Person from Besant Technologies:</label>
+        <input type="text" name="person" id="person" />
+      </div>
+
+      <div class="sub">
+        <button type="submit">Submit</button>
+        <button type="reset">Reset</button>
+      </div>
+    </form>
+  </div>
+
+
+  <div class="table-container">
+    <h1>For Authorization purpose!</h1>
+    <table border="1" id="table-data">
+        <thead>
+            <tr>
+              <th>Name</th>
+              <th>Mobile.No</th>
+              <th>Email</th>
+              <th>Location</th>
+              <th>Course</th>
+              <th>Batch Time</th>
+              <th>Profession</th>
+              <th style="padding: 5px;" colspan="3">Action</th>
+            </tr>
+        </thead>
+        <tbody>
+          <!-- <tr>
+            <td>hhhhhhhhhh</td>
+            <td>hhhhhhhhhh</td>
+            <td>hhhhhhhhhh</td>
+            <td>hhhhhhhhhh</td>
+            <td>hhhhhhhhhh</td>
+            <td>hhhhhhhhhh</td>
+            <td>hhhhhhhhhh</td>
+            <td>hhhhhhhhhh</td>
+            <td>hhhhhhhhhh</td>
+            <td>hhhhhhhhhh</td>
+          </tr> -->
+        </tbody>
+    </table>
+</div>  
+
+    <script src="./index.js"></script>
+  </body>
+</html>
